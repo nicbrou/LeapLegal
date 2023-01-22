@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Dancing+Script&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script defer src="script.js"></script>
     <title>Document</title>
@@ -23,69 +27,79 @@
             </div>
             <div class="nav-col-4">
             <button class="create-btn">Create Free Account</button>
+            <div class="mobile-menu">
+                <a href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </div>
     </div>
     <div class="container">
-        <div class="main-left-col">
-            <h1>The place to work with your lawyer</h1>
-            <p>Your lawyer uses LawConnect to share information with you about your legal case in a private, convenient and secure way.</p>
-            <button class="create-btn-2">Create Free Account</button>
-        </div>
-        <div class="main-right-col">
-            <img id="top-image-desktop" src="/images/lc-hero-desktop.png" alt="LawConnect" height="100%" width="100%"/>
-            <img id="top-image-mobile" src="/images/lc-hero-mobile.png" alt="LawConnect" height="100%" width="100%"/>
-        </div>
+            <div class="main-left-col">
+                <h1 id="main-heading">The place to work with your lawyer</h1>
+                <p class="main-par">Your lawyer uses LawConnect to share information with you about your legal case in a private, convenient and secure way.</p>
+                <button class="create-btn-2">Create Free Account</button>
+            </div>
+            <div class="main-right-col">
+                <img id="top-image-desktop" src="/images/lc-hero-desktop.png" alt="LawConnect" height="100%" width="100%"/>
+                <img id="top-image-mobile" src="/images/lc-hero-mobile.png" alt="LawConnect" height="100%" width="100%"/>
+            </div>
+    </div>
+    <div class="main-2-content-container">
         <div class="main-2-title">
-            <h1>One Solution Designed to Make Your Firm More Money</h1>
+            <h1 id="one-solution-heading">One Solution Designed to Make Your Firm More Money</h1>
         </div>
-        <div class="main-2-content-container">
         <div class="main-2-left-col">
             <div class="card">
-                <img src="/images/lc-safe-docs.jpg" alt="safeDocs" width="100%"/>
+                <img src="/images/lc-safe-docs.jpg" alt="safeDocs" width="100%" style="border-radius: 2%"/>
                 <div class="card-container">
                   <h4 class="card-title"><b>Safe Documents</b></h4>
-                  <p>LawConnect stores its data on servers provided by Amazon Web Services and is safer than email.</p>
+                  <p class="card-desc">LawConnect stores its data on servers provided by Amazon Web Services and is safer than email.</p>
                 </div>
               </div>
         </div>
         <div class="main-2-mid-col">
               <div class="card">
-                <img src="/images/lc-work-remote.jpg" alt="" width="100%">
+                <img src="/images/lc-work-remote.jpg" alt="" width="100%" style="border-radius: 2%">
                 <div class="card-container">
                   <h4 class="card-title"><b>Work Remotely</b></h4>
-                  <p>You can sign in to LawConnect and view, collaborate and share your documents from anywhere...</p>
+                  <p class="card-desc">You can sign in to LawConnect and view, collaborate and share your documents from anywhere...</p>
                 </div>
               </div>
         </div>
         <div class="main-2-right-col">
             <div class="card">
-                <img src="/images/lc-greater-collab.jpg" alt="" width="100%">
+                <img src="/images/lc-greater-collab.jpg" alt="" height="100%"width="100%" style="border-radius: 2%">
                 <div class="card-container">
                   <h4 class="card-title"><b>Greater Collaboration</b></h4>
-                  <p>Collaborate on documents with clients, lawyers, and other parties with LawConnect's Comment and Reply.</p>
+                  <p class="card-desc">Collaborate on documents with clients, lawyers, and other parties with LawConnect's Comment and Reply.</p>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
     
+    <div class="main-3-content-container">
         <div class="main-3-left-col">
-            <h1>Sharing Documents</h1>
-            <p class="main-1-left-col">Your lawyer will share documents related to your case with you, via LawConnect. Each time a document is shared by your lawyer, you will receive an email notification so you can access the document. 
+            <h1 id="share-docs-heading">Sharing Documents</h1>
+            <p class="share-docs-desc">Your lawyer will share documents related to your case with you, via LawConnect. Each time a document is shared by your lawyer, you will receive an email notification so you can access the document. 
             </p>
-            <p>If you already have a LawConnect account, you can login and an alert will be in your notifications tab that a document has been shared. 
+            <p class="share-docs-desc">If you already have a LawConnect account, you can login and an alert will be in your notifications tab that a document has been shared. 
             </p>
         </div>
         <div class="main-3-right-col">
-            <img src="/images/lc-share-docs.png" alt="LawConnect" height="100%" width="100%"/>
+            <img id="share-docs-img" src="/images/lc-share-docs.png" alt="LawConnect" height="100%" width="100%"/>
         </div>
+    </div>
+    <div class="main-4-content-container">
         <div class="main-4-left-col">
-            <img src="/images/lc-sign-docs-desktop.png" alt="LawConnect" height="100%" width="100%"/>
+            <img id="sign-docs-img-desktop" src="/images/lc-sign-docs-desktop.png" alt="LawConnect" height="100%" width="100%"/>
+            <img id="sign-docs-img-mobile" src="/images/lc-sign-docs-mobile.png" alt="LawConnect" height="100%" width="100%"/>
         </div>
         <div class="main-4-right-col">
-            <h1>Signing Documents Electronically</h1>
-            <p>LawConnect integrates with DocuSign to provide our users with a quick, easy, and secure way to sign important legal documents.</p>
+            <h1 id="sign-docs-heading">Signing Documents Electronically</h1>
+            <p id="sign-docs-desc">LawConnect integrates with DocuSign to provide our users with a quick, easy, and secure way to sign important legal documents.</p>
         </div>
-        <footer>FOOTER</footer>
-</div>
+    </div>
+    <footer></footer>
 </body>
 </html>
