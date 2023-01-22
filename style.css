@@ -5,7 +5,19 @@
     }
 
 body {
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Heebo', sans-serif;
+}
+
+h1 {
+    font-family: 'Heebo', sans-serif;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
 }
 
 .sticky {
@@ -61,6 +73,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     background-image: linear-gradient(to bottom, #0c5ee1, #0a49af);
+    padding-top: 50px;
+    padding-bottom: 80px;
+    align-items: center;
 }
 
 .main-left-col {
@@ -68,6 +83,7 @@ body {
     grid-row: 2 / 3;
     align-self: center;
     color: white;
+    padding-right: 25px;
 }
 
 .create-btn-2 {
@@ -77,7 +93,18 @@ body {
 .main-right-col {
     grid-column: 4 / 6;
     grid-row: 2 / 3;
-    justify-self: right;
+    justify-self: center;
+}
+
+#main-heading {
+    font-size: 40px;
+}
+
+.main-par {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
 }
 
 .main-2-content-container {
@@ -92,6 +119,12 @@ body {
     grid-column: 1 / 6;
     grid-row: 3 / 4;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: #255cb7;
+    font-size: 14px;
 }
 
 .main-2-left-col {
@@ -118,6 +151,10 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     background-color: #f6f7f8;
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-self: center;
 }
 
 .main-3-left-col {
@@ -134,6 +171,7 @@ body {
     grid-column: 4 / 6;
     grid-row: 5 / 6;
     justify-self: right;
+    align-self: center;
 }
 
 .main-4-content-container {
@@ -141,6 +179,9 @@ body {
     background-color: white;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #sign-docs-heading {
@@ -221,9 +262,7 @@ footer {
     display: none;
     }
 
-
-
-@media (min-width: 0px) and (max-width: 750px) {
+@media (min-width: 0px) and (max-width: 650px) {
     .law-logo {
         height: 20px;
     }
@@ -237,17 +276,21 @@ footer {
     }
 
     #main-heading {
-        font-size: 40px;
+        font-size: 35px;
+        line-height: 45px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .main-par {
+        margin-top: 15px;
         line-height: 25px;
     }
 
     .create-btn-2 {
         font-size: 16px;
-        margin-top: 5px;
-        width: 100%;
+        margin-top: 20px;
+        width: 95%;
         margin-bottom: 30px;
         padding: 15px;
     }
@@ -423,14 +466,14 @@ footer {
     }
 }
 
-@media (min-width: 751px) and (max-width: 950px) {
-    h1 {
+@media (min-width: 651px) and (max-width: 950px) {
+    #main-heading {
         font-size:25px;
-        line-height: 27px;
+        line-height: 37px;
     }
 
-    p {
-        font-size: 16px;
+    .main-par {
+        font-size: 12px;
         line-height: 16px;
     }
 
@@ -439,13 +482,18 @@ footer {
         text-align: left;
     }
 
+    .nav-link, .login {
+        font-size: 12px;
+    }
+
     .create-btn {
-        font-size: 9px;
-        padding: 5px;
+        font-size: 10px;
+        padding: 7px;
+
     }
 
     .create-btn-2 {
-        font-size: 9px;
+        font-size: 12px;
         margin-top: 10px;
     }
 
@@ -453,6 +501,51 @@ footer {
         padding: 1px;
     }
 
+    #one-solution-heading {
+        font-size: 30px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+    
+    .card-desc {
+        font-size: 12px;
+    }
+
+    #share-docs-img {
+        width: 100%;
+        height: 80%;
+    }
+
+    #share-docs-heading {
+        font-size: 20px;
+    }
+
+    #sign-docs-heading {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .share-docs-desc {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    #sign-docs-desc {
+        font-size: 12px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 
 }
 
+@media (min-width: 951px) and (max-width: 3500px) {
+    #top-image-desktop {
+        width: 100%;
+        height: 70%;
+    }
+}
